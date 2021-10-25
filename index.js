@@ -41,9 +41,8 @@ app.get('/users/:id', (req,res) => {
 ///
 
 
-
-
 app.post('/users',(req, res) => {
+
     const newUsers = req.body;
     newUsers.id = users.length;
     users.push(newUsers);
